@@ -6,16 +6,16 @@
 <body>
 	
 <script type='text/javascript'>
-	function initAgentforceMessaging() {
+	function initEmbeddedMessaging() {
 		try {
 			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			agentforce_messaging.init(
-				'00DSB00000QAo9R',
-				'RouteToQueue',
+				'00Dxx00RKtjP10y',
+				'Dep3',
 				'https://orgfarm-37b7954bf4.my.site-com.nvazx1ser17a0xynhdh3chrja0pah.wa.crm.dev:6101/ESWDep31756191645110',
 				{
-					scrt2URL: 'https://orgfarm-0c5a291cea.test1.my.pc-rnd.salesforce-scrt.com'
+					scrt2URL: 'http://orgfarm-37b7954bf4.my.salesforce-scrt-com.nvazx1ser17a0xynhdh3chrja0pah.wa.crm.dev'
 				}
 			);
 		} catch (err) {
@@ -23,7 +23,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://orgfarm-37b7954bf4.my.site-com.nvazx1ser17a0xynhdh3chrja0pah.wa.crm.dev:6101/ESWDep31756191645110/assets/js/init.js' onload='initAgentforceMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-37b7954bf4.my.site-com.nvazx1ser17a0xynhdh3chrja0pah.wa.crm.dev:6101/ESWDep31756191645110/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
 
 Happy Testing1
 </body>
