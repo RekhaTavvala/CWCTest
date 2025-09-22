@@ -2,29 +2,26 @@
 	
 <body>
 	
-	
-	<script type='text/javascript'>
-    function initAgentforceMessaging() {
-        try {
-            agentforce_messaging.settings.language = 'en_US';
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-            agentforce_messaging.init(
-                '00DHo00000KTm5i', // orgId
-                'Gucci_SDO',             // deployment
-                // LWR site endpoint
-                'https://orgfarm-03f5767ff8.my.site-com.o1litvqsgj1x0tkbvffselmw00wqk6i.wc.crm.dev:6101/ESWDep11758546832349',
-                {
-                    scrt2URL: 'https://trailsignup-133725629078f0.my.salesforce-scrt.com'
-                }
-            );
-        } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
-        }
-    };
+			agentforce_messaging.init(
+				'00DHo00000KTm5i',
+				'Gucci_SDO', 
+				'https://orgfarm-03f5767ff8.my.site-com.o1litvqsgj1x0tkbvffselmw00wqk6i.wc.crm.dev:6101/ESWDep11758546832349',
+				{
+					scrt2URL: 'https://trailsignup-133725629078f0.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
 </script>
-<!-- LWR site endpoint - loads init.js --> 
-<script type='text/javascript' src='https://orgfarm-03f5767ff8.my.site-com.o1litvqsgj1x0tkbvffselmw00wqk6i.wc.crm.dev:6101/ESWDep11758546832349/assets/js/init.js' onload='initAgentforceMessaging()'></script>
-Happy Testing3
+<script type='text/javascript' src='https://orgfarm-03f5767ff8.my.site-com.o1litvqsgj1x0tkbvffselmw00wqk6i.wc.crm.dev:6101/ESWDep11758546832349/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
+Happy Testing2
 	
 
 </body>
